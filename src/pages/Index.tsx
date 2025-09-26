@@ -25,8 +25,8 @@ const Index = () => {
       
       {/* Content Rows - adjusted spacing for smooth blend */}
       <div className="relative -mt-20 md:-mt-32 z-10 pb-10">
-        {contentCategories.map((category, index) => (
-          <ContentRow key={category} title={category} items={index % 2 === 0 ? 10 : 8} />
+        {contentCategories.map((category) => (
+          <ContentRow key={category} title={category} />
         ))}
       </div>
       

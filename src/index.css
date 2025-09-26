@@ -128,4 +128,11 @@ All colors MUST be HSL.
   ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--muted-foreground));
   }
+
+  /* Stroke text effect for Top 10 numbers */
+  .stroke-text {
+    -webkit-text-stroke: 2px hsl(var(--background));
+    text-stroke: 2px hsl(var(--background));
+    paint-order: stroke fill;
+  }
 }
